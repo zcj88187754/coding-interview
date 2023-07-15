@@ -1,5 +1,6 @@
 const { resolve } = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { getThemeVariables } = require('antd/dist/theme');
 
 module.exports = {
   mode: 'development',
@@ -14,6 +15,34 @@ module.exports = {
         test: [/\.jsx?$/, /\.tsx?$/],
         use: ['babel-loader'],
         exclude: /node_modules/,
+      },
+      {
+        test: /\.less$/,
+        include: [
+          /[\\/]node_modules[\\/].*rc-/,
+          /[\\/]node_modules[\\/].*antd/,
+        ],
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              importLoaders: 1,
+            },
+          },
+          {
+            loader: 'less-loader',
+            options: {
+              lessOptions: {
+                modifyVars: getThemeVariables({
+                  dark: true,
+                  compact: true,
+                }),
+                javascriptEnabled: true,
+              },
+            },
+          },
+        ],
       },
       {
         test: /\.css$/i,
