@@ -16,8 +16,11 @@ In addition to these, the interface will include buttons to disconnect or reesta
 
 ## Dependencies
 React@^18.2.0
+
 Ant Design@^4.23.6
+
 echarts-for-react@^3.0.2
+
 Feel free to utilize other component libraries and chart libraries apart from Ant Design and echarts-for-react if desired.
 
 However, the usage of **React 18 and TypeScript** is a prerequisite for this project.
