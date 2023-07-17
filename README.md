@@ -2,7 +2,9 @@
 
 ## Summary
 
-[Figma Placeholder]
+![Alt text](image.png)
+
+[Figma](https://www.figma.com/file/3GlzJywqCZbOksfXE7QWu2/Coding-Interview?type=design&node-id=0%3A1&mode=design&t=IpMcksMSAkamH4Qm-1)
 
 As depicted in the diagram above, our goal is to create a dual-column layout for a Data Portal.
 
