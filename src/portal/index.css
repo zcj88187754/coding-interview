@@ -1,0 +1,20 @@
+.portal-box {
+    height: 100%;
+    width: 100%;
+}
+.chart-box {
+    display: inline-block;
+    vertical-align: top;
+    height: 100%;
+    width: 65%;
+}
+.data-view {
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+    width: 35%;
+}
+.view-panel{
+    height: 100%;
+    overflow: auto;
+}

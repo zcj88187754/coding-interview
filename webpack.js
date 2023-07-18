@@ -7,6 +7,9 @@ module.exports = {
   entry: './index.tsx',
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx'],
+    alias:{
+      '@': resolve(__dirname,'src/')
+    }
   },
   context: resolve(__dirname, './src'),
   module: {
