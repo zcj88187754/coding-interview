@@ -1,4 +1,5 @@
 export function dateToFormat(date) {
+    let a = 0;
     let Year = date.getFullYear();
     let Moth = (date.getMonth() + 1 < 10 ? '0' + (date.getMonth() + 1) : date.getMonth() + 1);
     let Day = (date.getDate() < 10 ? '0' + date.getDate() : date.getDate());
